@@ -1,5 +1,5 @@
 {
-  "homepage": "https://csmurillo.github.io/my-nextjs-app",
+  "homepage": "https://csmurillo.github.io/frontend-mentor-testimonial",
   "scripts": {
     "replaceFilePaths": "node replacer.js",
     "dev": "next dev",

@@ -1,6 +1,6 @@
 module.exports = {
     env: {
-      PUBLIC_URL: "https://csmurillo.github.io/my-nextjs-app",
+      PUBLIC_URL: "https://csmurillo.github.io/frontend-mentor-testimonial",
       assetPrefix: './'
     }
   };

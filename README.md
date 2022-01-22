@@ -19,7 +19,7 @@
 
 ### Links
 
-- Live Site URL: [https://csmurillo.github.io/my-nextjs-app](https://csmurillo.github.io/my-nextjs-app)
+- Live Site URL: [https://csmurillo.github.io/frontend-mentor-testimonial](https://csmurillo.github.io/frontend-mentor-testimonial)
 
 ## My process
 
