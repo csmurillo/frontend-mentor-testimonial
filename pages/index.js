@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import Card from '../components/Card';
+import Head from 'next/head';
 
 export default () => (
   <>
+  <Head>
+      <title>Frontend Mentor | Testimonials</title>
+      <link rel="icon" href="/image/favicon-32x32.png"/>
+  </Head>
   <Container className='center'>
     <CardContainer>
       <CardOneContainer>
@@ -64,7 +69,7 @@ export default () => (
       </CardFiveContainer>
     </CardContainer>
   </Container>
-  <div class="attribution center">
+  <div className="attribution center">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a>. 
       Coded by <a href="#"> Angel Murillo</a>.
     </div>
