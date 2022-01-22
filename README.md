@@ -35,7 +35,7 @@
 
 ### Useful resources
 
-- [Example resource 1](https://css-tricks.com/snippets/css/complete-guide-grid/) - This guide helped discover how i could set up the grid and modify it to meet the needs of this project.
+- [Example resource 1](https://css-tricks.com/snippets/css/complete-guide-grid/) - This guide helped me discover how to set up the css grid and modify it to meet the needs of this project.
 
 ## Author
 
