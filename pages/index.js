@@ -6,7 +6,7 @@ export default () => (
   <>
   <Head>
       <title>Frontend Mentor | Testimonials</title>
-      <link rel="icon" href="/image/favicon-32x32.png"/>
+      <link rel="icon" href="./image/favicon-32x32.png"/>
   </Head>
   <header>
     <div className="attribution center">
