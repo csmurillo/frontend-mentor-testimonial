@@ -3,33 +3,29 @@ import styled from 'styled-components';
 
 const Card = ({username='username',quotationPattern,userImage,verifiedGraduate,userMessage='mesage',userQuote='quote',backgroundColor,borderColor,textColor}) =>{
     return (
-        <div>
-            <CardContentContainer color={backgroundColor}>
-                <section>
-                    {quotationPattern&&<QuotationContainer>
-                        <Quotation src="/images/bg-pattern-quotation.svg" alt='quotation for background container'></Quotation>
-                    </QuotationContainer>}
-                    <UserInfoContainer>
-                        <UserImage borderColor={borderColor} src={userImage} alt='user image'></UserImage>
-                        <UserDescription>
-                            <div>
-                                <UserName textColor={textColor}>{username}</UserName>
-                                {verifiedGraduate?<VerifiedGraduate  textColor={textColor}>Verified Graduate</VerifiedGraduate>:''}
-                            </div>
-                        </UserDescription>
-                    </UserInfoContainer>
-                    <UserMessageContainer textColor={textColor}>
-                        {userMessage}
-                    </UserMessageContainer>
-                    <UserQuoteContainer  textColor={textColor}>
-                        {userQuote}
-                    </UserQuoteContainer>
-                </section>
-            </CardContentContainer>
-        </div>
+        <CardContentContainer backgroundColor={backgroundColor}>
+                {quotationPattern&&<QuotationContainer>
+                    <Quotation src="/images/bg-pattern-quotation.svg" alt='quotation for background container'></Quotation>
+                </QuotationContainer>}
+                <UserInfoContainer>
+                    <UserImage borderColor={borderColor} src={userImage} alt='user image'></UserImage>
+                    <UserDescription>
+                        <div>
+                            <UserName textColor={textColor}>{username}</UserName>
+                            {verifiedGraduate?<VerifiedGraduate  textColor={textColor}>Verified Graduate</VerifiedGraduate>:''}
+                        </div>
+                    </UserDescription>
+                </UserInfoContainer>
+                <UserMessageContainer textColor={textColor}>
+                    {userMessage}
+                </UserMessageContainer>
+                <UserQuoteContainer  textColor={textColor}>
+                    {userQuote}
+                </UserQuoteContainer>
+        </CardContentContainer>
     );
 };
-const CardContentContainer=styled.div`
+const CardContentContainer=styled.section`
     z-index:0;
     position:relative;
     width:100%;
@@ -37,7 +33,7 @@ const CardContentContainer=styled.div`
     padding:25px 30px;
     background-color:white;
     border-radius:15px;
-    background-color: ${props => props.color };
+    background-color: ${props => props.backgroundColor };
     color:hsl(0, 0%, 81%);
     @media (min-width: 1200px) {
         padding:20px 25.5px 20px 25.5px;
