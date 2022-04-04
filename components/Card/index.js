@@ -102,6 +102,7 @@ const UserQuoteContainer=styled.p`
     font-weight:500;
     line-height:1.5em;
     color: ${props => props.textColor };
+    opacity:70%;
     @media (min-width: 1200px) {
         font-size: .96em;
         font-weight:500;
