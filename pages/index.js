@@ -5,8 +5,8 @@ import Head from 'next/head';
 export default () => (
   <>
   <Head>
-      <title>Frontend Mentor | Testimonials</title>
-      <link rel="icon" href="./image/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png"/>
+    <title>Frontend Mentor | Testimonials</title>
   </Head>
   <header>
     <div className="attribution center">
