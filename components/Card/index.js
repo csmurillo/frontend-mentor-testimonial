@@ -4,28 +4,30 @@ import styled from 'styled-components';
 const Card = ({username='username',quotationPattern,userImage,verifiedGraduate,userMessage='mesage',userQuote='quote',backgroundColor,borderColor,textColor}) =>{
     return (
         <CardContentContainer color={backgroundColor}>
-            {quotationPattern&&<QuotationContainer>
-                <Quotation src="/images/bg-pattern-quotation.svg"></Quotation>
-            </QuotationContainer>}
-            <UserInfoContainer>
-                <UserImage borderColor={borderColor} src={userImage}></UserImage>
-                <UserDescription>
-                    <div>
-                        <UserName textColor={textColor}>{username}</UserName>
-                        {verifiedGraduate?<VerifiedGraduate  textColor={textColor}>Verified Graduate</VerifiedGraduate>:''}
-                    </div>
-                </UserDescription>
-            </UserInfoContainer>
-            <UserMessageContainer textColor={textColor}>
-                {userMessage}
-            </UserMessageContainer>
-            <UserQuoteContainer  textColor={textColor}>
-                {userQuote}
-            </UserQuoteContainer>
+            <section>
+                {quotationPattern&&<QuotationContainer>
+                    <Quotation src="/images/bg-pattern-quotation.svg" alt='quotation for background container'></Quotation>
+                </QuotationContainer>}
+                <UserInfoContainer>
+                    <UserImage borderColor={borderColor} src={userImage} alt='user image'></UserImage>
+                    <UserDescription>
+                        <div>
+                            <UserName textColor={textColor}>{username}</UserName>
+                            {verifiedGraduate?<VerifiedGraduate  textColor={textColor}>Verified Graduate</VerifiedGraduate>:''}
+                        </div>
+                    </UserDescription>
+                </UserInfoContainer>
+                <UserMessageContainer textColor={textColor}>
+                    {userMessage}
+                </UserMessageContainer>
+                <UserQuoteContainer  textColor={textColor}>
+                    {userQuote}
+                </UserQuoteContainer>
+            </section>
         </CardContentContainer>
     );
 };
-const CardContentContainer=styled.section`
+const CardContentContainer=styled.div`
     z-index:0;
     position:relative;
     width:100%;

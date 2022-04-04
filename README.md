@@ -9,7 +9,6 @@
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -19,7 +18,7 @@
 
 ### Links
 
-- Live Site URL: [https://csmurillo.github.io/frontend-mentor-testimonial](https://csmurillo.github.io/frontend-mentor-testimonial)
+- Live Site URL: [https://frontend-mentor-testimonial-beta.vercel.app/](https://frontend-mentor-testimonial-beta.vercel.app/)
 
 ## My process
 
