@@ -8,6 +8,12 @@ export default () => (
       <title>Frontend Mentor | Testimonials</title>
       <link rel="icon" href="/image/favicon-32x32.png"/>
   </Head>
+  <header>
+    <div className="attribution center">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a>. 
+        Coded by <a href="#"> Angel Murillo</a>.
+      </div>
+  </header>
   <Container className='center'>
     <CardContainer>
       <CardOneContainer>
@@ -27,7 +33,7 @@ export default () => (
         <Card username={"Jonathan Walters"} userImage={'/images/image-jonathan.jpg'} verifiedGraduate={true}
           userMessage={`The team was very supportive and kept me motivated`}
           userQuote={`\"I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-          for a big company. This was one of the best investments I\'ve made in myself. \"`}
+          for a big company. This was one of the best investments I\'ve made in myself.\"`}
           backgroundColor={'hsl(217, 19%, 35%)'}
           ></Card>
       </CardTwoContainer>
@@ -44,10 +50,10 @@ export default () => (
         <Card username={"Patrick Abrams"} userImage={'/images/image-patrick.jpg'} verifiedGraduate={true}
           userMessage={`Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
           learning from their experiences was easy.`}
-          userQuote={`\" The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+          userQuote={`\"The staff seem genuinely concerned about my progress which I find really refreshing. The program 
           gave me the confidence necessary to be able to go out in the world and present myself as a capable 
           junior developer. The standard is above the rest. You will get the personal attention you need from 
-          an incredible community of smart and amazing people. \"`}
+          an incredible community of smart and amazing people.\"`}
           backgroundColor={'hsl(219, 29%, 14%)'}
           borderColor={'hsl(263, 55%, 60%)'}
           ></Card>
@@ -55,27 +61,23 @@ export default () => (
       <CardFiveContainer>
         <Card username={"Kira Whittle"} userImage={'/images/image-kira.jpg'} verifiedGraduate={true}
           userMessage={`Such a life-changing experience. Highly recommended!`}
-          userQuote={`\" Before joining the bootcamp, I\'ve never written a line of code. I needed some structure from 
+          userQuote={`\"Before joining the bootcamp, I\'ve never written a line of code. I needed some structure from 
           professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
           student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
           did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
           project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
           could ever have. In fact, I\'ve often referred to it during interviews as an example of my developent 
           experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
-          100% recommend! \"`}
+          100% recommend!\"`}
           backgroundColor={'hsl(0, 0%, 100%)'}
           textColor={'hsl(217, 19%, 35%)'}
           ></Card>
       </CardFiveContainer>
     </CardContainer>
   </Container>
-  <div className="attribution center">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a>. 
-      Coded by <a href="#"> Angel Murillo</a>.
-    </div>
   </>
 );
-const Container = styled.div`
+const Container = styled.main`
   width:100%; height:auto;
   display:inline;
   background-color: hsl(210, 46%, 95%);
@@ -99,8 +101,8 @@ const CardContainer=styled.div`
     "container5";
     @media (min-width: 1200px) {
       padding:none !important;
-      grid-template-columns: 250px 250px 250px 250px;
-      grid-template-rows: 290px 290px;
+      grid-template-columns: 245px 245px 245px 245px;
+      grid-template-rows: 280px 255px;
       grid-column-gap: 15px;
       grid-template-areas:
         "container1 container2 container5"
